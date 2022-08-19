@@ -3,10 +3,10 @@ Description=gunicorn daemon
 After=network.target
 
 [Service]
-User=jenkins
+User=it21906
 Group=www-data
-WorkingDirectory=/home/jenkins/adminSystem/base
-ExecStart=/home/jenkins/adminSystem/myvenv/bin/gunicorn --access-logfile - --workers 3  --bind unix:/home/jenkins/adminSystem/base/base.sock base.wsgi:application
+WorkingDirectory=/home/it21906/adminSystem/base
+ExecStart=/home/it21906/adminSystem/myvenv/bin/gunicorn --access-logfile - --workers 3  --bind unix:/home/it21906/adminSystem/base/base.sock base.wsgi:application
 
 
 [Install]
