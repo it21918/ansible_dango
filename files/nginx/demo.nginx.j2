@@ -4,11 +4,11 @@ server {
 
     location = /favicon.ico { access_log off; log_not_found off; }
     location /static/ {
-        root /home/jenkins/adminSystem/base;
+        root /home/it21906/adminSystem/base;
     }
 
     location / {
         include proxy_params;
-        proxy_pass http://unix:/home/jenkins/adminSystem/base/base.sock;
+        proxy_pass http://unix:/home/it21906/adminSystem/base/base.sock;
     }
 }
