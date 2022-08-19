@@ -1,12 +1,12 @@
 user_dir: "/home/vagrant"
 app_port: 5000
 service:
-  workingdir: /home/vagrant/devopsAdmin/student_management
-  execstart: /home/vagrant/devopsAdmin/myvenv/bin/gunicorn --access-logfile - --workers 3 --bind 0.0.0.0:8001 student_management.wsgi:application
+  workingdir: /home/vagrant/adminSystem/base
+  execstart: /home/vagrant/adminSystem/myvenv/bin/gunicorn --access-logfile - --workers 3 --bind 0.0.0.0:8001 base.wsgi:application
 
 djangoservice:
-  workingdir: /home/vagrant/devopsAdmin/student_management
-  execstart: /home/vagrant/devopsAdmin/myvenv/bin/gunicorn --access-logfile - --workers 3 --bind 0.0.0.0:8001 student_management.wsgi:application
+  workingdir: /home/vagrant/adminSystem/base
+  execstart: /home/vagrant/adminSystem/myvenv/bin/gunicorn --access-logfile - --workers 3 --bind 0.0.0.0:8001 base.wsgi:application
 
 
 
