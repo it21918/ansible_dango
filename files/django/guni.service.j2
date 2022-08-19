@@ -5,8 +5,8 @@ After=network.target
 [Service]
 User=jenkins
 Group=www-data
-WorkingDirectory=/home/jenkins/devopsSystem/student_management
-ExecStart=/home/jenkins/devopsSystem/myvenv/bin/gunicorn --access-logfile - --workers 3  --bind unix:/home/jenkins/devopsSystem/student_management/student_management.sock student_management.wsgi:application
+WorkingDirectory=/home/jenkins/userSystem/base
+ExecStart=/home/jenkins/userSystem/myvenv/bin/gunicorn --access-logfile - --workers 3  --bind unix:/home/jenkins/userSystem/base/base.sock base.wsgi:application
 
 
 [Install]
