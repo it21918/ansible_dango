@@ -2,12 +2,12 @@ user_dir: "/home/jenkins"
 app_port: 5000
 app_user: jenkins
 service:
-  workingdir: "{{user_dir}}/devopsAdmin/student_management"
-  execstart: "{{user_dir}}/devopsAdmin/myvenv/bin/gunicorn --access-logfile - --workers 3 --bind  student_management.wsgi:application"
+  workingdir: "{{user_dir}}/adminSystem/base"
+  execstart: "{{user_dir}}/adminSystem/myvenv/bin/gunicorn --access-logfile - --workers 3 --bind  base.wsgi:application"
 
 djangoservice:
-  workingdir: "{{user_dir}}/devopAdmin/student_management"
-  execstart: "{{user_dir}}/devopsAdmin/myvenv/bin/gunicorn --access-logfile - --workers 3 --bind  student_management.wsgi:application"
+  workingdir: "{{user_dir}}/adminSystem/base"
+  execstart: "{{user_dir}}/adminSystem/myvenv/bin/gunicorn --access-logfile - --workers 3 --bind  base.wsgi:application"
 
 
 
